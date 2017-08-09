@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(costmap_2d)
 
-find_package(Qt5Widgets REQUIRED)
+
 find_package(catkin REQUIRED
         COMPONENTS
             cmake_modules
@@ -23,6 +23,7 @@ find_package(catkin REQUIRED
             voxel_grid
         )
 
+find_package(Qt5Widgets REQUIRED)
 find_package(PCL REQUIRED)
 remove_definitions(-DDISABLE_LIBUSB-1.0)
 find_package(Eigen3 REQUIRED)
